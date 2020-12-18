@@ -399,3 +399,7 @@ footer {
   font-size: 24px;
   padding: 1%;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

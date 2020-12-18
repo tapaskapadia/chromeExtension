@@ -53,6 +53,7 @@ $(document).ready(function () {
   }
   function getDataUri(url, callback) {
     var image = new Image();
+    image.setAttribute('crossOrigin', 'anonymous');
     image.onload = function () {
       var canvas = document.createElement('canvas');
       canvas.width = this.naturalWidth; // or 'width' if you want a special/scaled size
